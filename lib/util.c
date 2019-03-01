@@ -77,7 +77,7 @@ duo_common_ini_handler(struct duo_config *cfg, const char *section,
                 free(buf);
                 return (0);
             }
-			//Concatenate next word if current word ends with "\ "
+            //Concatenate next word if current word ends with "\ "
             while (currWord[strlen(currWord) - 1] == '\\') {
                 currWord[strlen(currWord) - 1] = ' ';
                 nextWord = strtok(NULL, " ");
